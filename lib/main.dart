@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mesai_application_1/welcome_page/welcome.dart';
+import 'package:overtime_application/welcome_page/welcome.dart';
 
 void main() {
   runApp(const MyApp());
