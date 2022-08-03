@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mesai_application_1/welcome_page/parts/button_welcome.dart';
-import 'package:mesai_application_1/welcome_page/parts/image_welcome.dart';
-import 'package:mesai_application_1/welcome_page/parts/text_welcome.dart';
+import 'package:overtime_application/style/color_class.dart';
+import 'package:overtime_application/welcome_page/parts/button_welcome.dart';
+import 'package:overtime_application/welcome_page/parts/image_welcome.dart';
+import 'package:overtime_application/welcome_page/parts/text_welcome.dart';
 
 import 'parts/image_welcome.dart';
 
@@ -16,7 +17,7 @@ class _WelcomeState extends State<Welcome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xffB3E5FC),
+      backgroundColor: ColorClass.scaffoldBackground,
       body: SingleChildScrollView(
         child: Column(
           children: const [

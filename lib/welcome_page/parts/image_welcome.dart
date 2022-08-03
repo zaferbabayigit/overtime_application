@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:overtime_application/style/color_class.dart';
 
 class ImageWelcome extends StatefulWidget {
   const ImageWelcome({Key? key}) : super(key: key);
@@ -16,9 +17,9 @@ class _ImageWelcomeState extends State<ImageWelcome> {
       height: size.height * .4,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(0),
-        boxShadow: const [
+        boxShadow: [
           BoxShadow(
-            color: Colors.black38,
+            color: ColorClass.shadowcolor,
             offset: Offset(
               2.0,
               2.0,

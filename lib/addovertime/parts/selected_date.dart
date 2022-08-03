@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:overtime_application/style/color_class.dart';
 
 class SelectedDate extends StatelessWidget {
   const SelectedDate({Key? key}) : super(key: key);
@@ -10,7 +11,7 @@ class SelectedDate extends StatelessWidget {
       width: 350,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(0),
-        color: const Color(0xffF9A825),
+        color: ColorClass.buttoncolor,
         boxShadow: const [
           BoxShadow(
             color: Colors.black38,
@@ -23,13 +24,13 @@ class SelectedDate extends StatelessWidget {
           ),
         ],
       ),
-      child: const Padding(
+      child: Padding(
         padding: EdgeInsets.all(10.0),
         child: Text("31.07.2022",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontWeight: FontWeight.w900,
-              color: Color(0xff0D47A1),
+              color: ColorClass.textcolor,
               fontSize: 19,
               fontStyle: FontStyle.italic,
             )),

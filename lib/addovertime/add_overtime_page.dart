@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:mesai_application_1/addovertime/parts/coefficient_button.dart';
-import 'package:mesai_application_1/addovertime/parts/save_button.dart';
-import 'package:mesai_application_1/addovertime/parts/overtime_text.dart';
-import 'package:mesai_application_1/addovertime/parts/overtime_login.dart';
-import 'package:mesai_application_1/addovertime/parts/selected_date.dart';
+import 'package:overtime_application/addovertime/parts/coefficient_button.dart';
+import 'package:overtime_application/addovertime/parts/save_button.dart';
+import 'package:overtime_application/addovertime/parts/overtime_text.dart';
+import 'package:overtime_application/addovertime/parts/overtime_login.dart';
+import 'package:overtime_application/addovertime/parts/selected_date.dart';
+import 'package:overtime_application/style/color_class.dart';
 
 class AddOvertimePage extends StatefulWidget {
   const AddOvertimePage({Key? key}) : super(key: key);
@@ -17,21 +18,21 @@ class _AddOvertimePageState extends State<AddOvertimePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Color(0xffB3E5FC),
-          foregroundColor: const Color(0xff0D47A1),
+          backgroundColor: ColorClass.scaffoldBackground,
+          foregroundColor: ColorClass.textcolor,
           actions: [
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: TextButton.icon(
                   onPressed: () {},
-                  icon: const Icon(
+                  icon: Icon(
                     Icons.delete,
-                    color: Color(0xff0D47A1),
+                    color: ColorClass.textcolor,
                   ),
-                  label: const Text("Delete",
+                  label: Text("Delete",
                       style: TextStyle(
                         fontWeight: FontWeight.w900,
-                        color: Color(0xff0D47A1),
+                        color: ColorClass.textcolor,
                         fontSize: 16,
                         fontStyle: FontStyle.normal,
                       ))),

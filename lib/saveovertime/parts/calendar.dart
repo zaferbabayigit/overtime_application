@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:overtime_application/style/color_class.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 class Calendar extends StatefulWidget {
@@ -42,13 +43,13 @@ class _CalendarState extends State<Calendar> {
         selectedDayPredicate: (DateTime date) {
           return isSameDay(selectedDay, date);
         },
-        calendarStyle: const CalendarStyle(
+        calendarStyle: CalendarStyle(
           isTodayHighlighted: true,
-          selectedDecoration:
-              BoxDecoration(color: Color(0xff0D47A1), shape: BoxShape.circle),
-          selectedTextStyle: TextStyle(color: Colors.white),
+          selectedDecoration: BoxDecoration(
+              color: ColorClass.textcolor, shape: BoxShape.circle),
+          selectedTextStyle: TextStyle(color: ColorClass.white),
           todayDecoration: BoxDecoration(
-            color: Color(0xffF9A825),
+            color: ColorClass.buttoncolor,
             shape: BoxShape.circle,
           ),
         ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:overtime_application/style/color_class.dart';
 
 class OvertimeLogin extends StatefulWidget {
   const OvertimeLogin({Key? key}) : super(key: key);
@@ -15,10 +16,10 @@ class _OvertimeLoginState extends State<OvertimeLogin> {
       width: 350,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(0),
-        color: const Color(0xffF9A825),
-        boxShadow: const [
+        color: ColorClass.buttoncolor,
+        boxShadow: [
           BoxShadow(
-            color: Colors.black38,
+            color: ColorClass.shadowcolor,
             offset: Offset(
               2.0,
               2.0,
@@ -29,33 +30,33 @@ class _OvertimeLoginState extends State<OvertimeLogin> {
         ],
       ),
       child: Column(children: [
-        const Padding(
+        Padding(
           padding: EdgeInsets.all(8.0),
           child: Text("Overtime Coefficient : 2",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.w900,
-                color: Color(0xff0D47A1),
+                color: ColorClass.textcolor,
                 fontSize: 15,
                 fontStyle: FontStyle.italic,
               )),
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
+          children: [
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: EdgeInsets.all(8.0),
               child: SizedBox(
                 height: 80,
                 width: 150,
                 child: TextField(
                   keyboardType: TextInputType.number,
                   textInputAction: TextInputAction.go,
-                  cursorColor: Colors.orange,
+                  cursorColor: ColorClass.buttoncolor,
                   decoration: InputDecoration(
                       suffixIcon: Icon(Icons.watch_later),
                       filled: true,
-                      fillColor: Color(0xffB3E5FC),
+                      fillColor: ColorClass.scaffoldBackground,
                       labelText: "Hours :",
                       labelStyle: TextStyle(
                         fontSize: 17,
@@ -73,11 +74,11 @@ class _OvertimeLoginState extends State<OvertimeLogin> {
                 child: TextField(
                   keyboardType: TextInputType.number,
                   textInputAction: TextInputAction.go,
-                  cursorColor: Colors.orange,
+                  cursorColor: ColorClass.buttoncolor,
                   decoration: InputDecoration(
                       suffixIcon: Icon(Icons.watch_later),
                       filled: true,
-                      fillColor: Color(0xffB3E5FC),
+                      fillColor: ColorClass.scaffoldBackground,
                       labelText: "Minute :",
                       labelStyle: TextStyle(
                         fontSize: 16,
@@ -89,13 +90,13 @@ class _OvertimeLoginState extends State<OvertimeLogin> {
             ),
           ],
         ),
-        const Padding(
+        Padding(
           padding: EdgeInsets.all(8.0),
           child: Text("Total Work Coefficient : 0",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.w900,
-                color: Color(0xff0D47A1),
+                color: ColorClass.textcolor,
                 fontSize: 15,
                 fontStyle: FontStyle.italic,
               )),

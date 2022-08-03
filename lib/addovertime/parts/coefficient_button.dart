@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:overtime_application/addovertime/add_overtime_page.dart';
+import 'package:overtime_application/settings/settings_page.dart';
+import 'package:overtime_application/style/color_class.dart';
 
 class CoefficientButton extends StatefulWidget {
   const CoefficientButton({Key? key}) : super(key: key);
@@ -19,7 +21,7 @@ class _CoefficientButtonState extends State<CoefficientButton> {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => AddOvertimePage()),
+                MaterialPageRoute(builder: (context) => SettingsPage()),
               );
             },
             child: Container(
@@ -27,10 +29,10 @@ class _CoefficientButtonState extends State<CoefficientButton> {
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(0),
-                color: const Color(0xffF9A825),
-                boxShadow: const [
+                color: ColorClass.buttoncolor,
+                boxShadow: [
                   BoxShadow(
-                    color: Colors.black38,
+                    color: ColorClass.shadowcolor,
                     offset: Offset(
                       2.0,
                       2.0,
@@ -40,11 +42,11 @@ class _CoefficientButtonState extends State<CoefficientButton> {
                   ),
                 ],
               ),
-              child: const Center(
+              child: Center(
                   child: Text("Coefficient Change",
                       style: TextStyle(
                         fontWeight: FontWeight.w900,
-                        color: Color(0xff0D47A1),
+                        color: ColorClass.textcolor,
                         fontSize: 19,
                         fontStyle: FontStyle.italic,
                       ))),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mesai_application_1/home/home.dart';
+import 'package:overtime_application/home/home.dart';
+import 'package:overtime_application/style/color_class.dart';
 
 class ButtonWelcome extends StatefulWidget {
   const ButtonWelcome({Key? key}) : super(key: key);
@@ -23,10 +24,10 @@ class _ButtonWelcomeState extends State<ButtonWelcome> {
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(0),
-          color: const Color(0xffF9A825),
-          boxShadow: const [
+          color: ColorClass.buttoncolor,
+          boxShadow: [
             BoxShadow(
-              color: Colors.black38,
+              color: ColorClass.shadowcolor,
               offset: Offset(
                 2.0,
                 2.0,
@@ -36,11 +37,11 @@ class _ButtonWelcomeState extends State<ButtonWelcome> {
             ),
           ],
         ),
-        child: const Center(
+        child: Center(
             child: Text("GO ON",
                 style: TextStyle(
                   fontWeight: FontWeight.w900,
-                  color: Color(0xff0D47A1),
+                  color: ColorClass.textcolor,
                   fontSize: 16,
                   fontStyle: FontStyle.italic,
                 ))),

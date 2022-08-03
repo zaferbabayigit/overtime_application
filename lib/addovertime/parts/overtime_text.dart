@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:overtime_application/style/color_class.dart';
 
 class OvertimeText extends StatefulWidget {
   const OvertimeText({Key? key}) : super(key: key);
@@ -10,13 +11,13 @@ class OvertimeText extends StatefulWidget {
 class _OvertimeTextState extends State<OvertimeText> {
   @override
   Widget build(BuildContext context) {
-    return const Padding(
+    return Padding(
       padding: EdgeInsets.all(10.0),
       child: Text("OVERTİME ENTER",
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.w900,
-            color: Color(0xff0D47A1),
+            color: ColorClass.textcolor,
             fontSize: 19,
             fontStyle: FontStyle.italic,
           )),

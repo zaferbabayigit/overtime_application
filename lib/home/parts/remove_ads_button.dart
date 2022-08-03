@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mesai_application_1/welcome_page/welcome.dart';
+import 'package:overtime_application/style/color_class.dart';
+import 'package:overtime_application/welcome_page/welcome.dart';
 
 class RemoveAdsButton extends StatefulWidget {
   const RemoveAdsButton({Key? key}) : super(key: key);
@@ -23,10 +24,10 @@ class _RemoveAdsButtonState extends State<RemoveAdsButton> {
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(0),
-          color: const Color(0xffF9A825),
-          boxShadow: const [
+          color: ColorClass.buttoncolor,
+          boxShadow: [
             BoxShadow(
-              color: Colors.black38,
+              color: ColorClass.shadowcolor,
               offset: Offset(
                 2.0,
                 2.0,
@@ -40,12 +41,12 @@ class _RemoveAdsButtonState extends State<RemoveAdsButton> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Row(
-              children: const [
+              children: [
                 Padding(
                   padding: EdgeInsets.all(20.0),
                   child: Icon(
                     Icons.stars,
-                    color: Color(0xff0D47A1),
+                    color: ColorClass.textcolor,
                     size: 50,
                   ),
                 ),
@@ -57,7 +58,7 @@ class _RemoveAdsButtonState extends State<RemoveAdsButton> {
                   child: Text("REMOVE ADS",
                       style: TextStyle(
                         fontWeight: FontWeight.w900,
-                        color: Color(0xff0D47A1),
+                        color: ColorClass.textcolor,
                         fontSize: 20,
                         fontStyle: FontStyle.italic,
                       )),

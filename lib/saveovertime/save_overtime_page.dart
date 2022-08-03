@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:mesai_application_1/addovertime/add_overtime_page.dart';
-import 'package:mesai_application_1/home/parts/overtime_registration.dart';
-import 'package:mesai_application_1/saveovertime/parts/monthly_total.dart';
-import 'package:mesai_application_1/saveovertime/parts/overtime_add_button.dart';
-import 'package:mesai_application_1/saveovertime/parts/calendar.dart';
+import 'package:overtime_application/addovertime/add_overtime_page.dart';
+import 'package:overtime_application/home/parts/overtime_registration.dart';
+import 'package:overtime_application/saveovertime/parts/monthly_total.dart';
+import 'package:overtime_application/saveovertime/parts/overtime_add_button.dart';
+import 'package:overtime_application/saveovertime/parts/calendar.dart';
+import 'package:overtime_application/style/color_class.dart';
 
 class MesaiKayitPage extends StatefulWidget {
   MesaiKayitPage({Key? key}) : super(key: key);
@@ -17,8 +18,8 @@ class _MesaiKayitPageState extends State<MesaiKayitPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Color(0xffB3E5FC),
-          foregroundColor: const Color(0xff0D47A1),
+          backgroundColor: ColorClass.scaffoldBackground,
+          foregroundColor: ColorClass.textcolor,
         ),
         body: SingleChildScrollView(
           child: Column(children: [

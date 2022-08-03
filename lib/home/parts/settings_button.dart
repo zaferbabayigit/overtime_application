@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mesai_application_1/welcome_page/welcome.dart';
+import 'package:overtime_application/settings/settings_page.dart';
+import 'package:overtime_application/style/color_class.dart';
+import 'package:overtime_application/welcome_page/welcome.dart';
 
 class SettingsButton extends StatefulWidget {
   const SettingsButton({Key? key}) : super(key: key);
@@ -15,7 +17,7 @@ class _SettingsButtonState extends State<SettingsButton> {
       onPressed: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => const Welcome()),
+          MaterialPageRoute(builder: (context) => SettingsPage()),
         );
       },
       child: Container(
@@ -23,7 +25,7 @@ class _SettingsButtonState extends State<SettingsButton> {
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(0),
-          color: const Color(0xffF9A825),
+          color: ColorClass.buttoncolor,
           boxShadow: const [
             BoxShadow(
               color: Colors.black38,
@@ -40,12 +42,12 @@ class _SettingsButtonState extends State<SettingsButton> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Row(
-              children: const [
+              children: [
                 Padding(
                   padding: EdgeInsets.all(20.0),
                   child: Icon(
                     Icons.settings,
-                    color: Color(0xff0D47A1),
+                    color: ColorClass.textcolor,
                     size: 70,
                   ),
                 ),
@@ -57,7 +59,7 @@ class _SettingsButtonState extends State<SettingsButton> {
                   child: Text("SETTINGS",
                       style: TextStyle(
                         fontWeight: FontWeight.w900,
-                        color: Color(0xff0D47A1),
+                        color: ColorClass.textcolor,
                         fontSize: 20,
                         fontStyle: FontStyle.italic,
                       )),

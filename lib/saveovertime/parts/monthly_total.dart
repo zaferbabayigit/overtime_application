@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:overtime_application/style/color_class.dart';
 
 class MonthlyTotal extends StatefulWidget {
   const MonthlyTotal({Key? key}) : super(key: key);
@@ -15,10 +16,10 @@ class _MonthlyTotalState extends State<MonthlyTotal> {
       width: 350,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(0),
-        color: const Color(0xffF9A825),
-        boxShadow: const [
+        color: ColorClass.buttoncolor,
+        boxShadow: [
           BoxShadow(
-            color: Colors.black38,
+            color: ColorClass.shadowcolor,
             offset: Offset(
               2.0,
               2.0,
@@ -31,25 +32,25 @@ class _MonthlyTotalState extends State<MonthlyTotal> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Padding(
+          Padding(
             padding: EdgeInsets.all(5.0),
             child: Text("Monthly Total",
                 style: TextStyle(
                   fontWeight: FontWeight.w900,
-                  color: Color(0xff0D47A1),
+                  color: ColorClass.textcolor,
                   fontSize: 19,
                   fontStyle: FontStyle.italic,
                 )),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: const [
+            children: [
               Padding(
                 padding: EdgeInsets.all(10.0),
                 child: Text("Coefficient Overtime:",
                     style: TextStyle(
                       fontWeight: FontWeight.w900,
-                      color: Color(0xff0D47A1),
+                      color: ColorClass.textcolor,
                       fontSize: 10,
                       fontStyle: FontStyle.italic,
                     )),
@@ -59,7 +60,7 @@ class _MonthlyTotalState extends State<MonthlyTotal> {
                 child: Text("0.00 Hours",
                     style: TextStyle(
                       fontWeight: FontWeight.w900,
-                      color: Color(0xff0D47A1),
+                      color: ColorClass.textcolor,
                       fontSize: 10,
                       fontStyle: FontStyle.italic,
                     )),

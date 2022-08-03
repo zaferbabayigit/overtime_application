@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mesai_application_1/saveovertime/save_overtime_page.dart';
+import 'package:overtime_application/saveovertime/save_overtime_page.dart';
+import 'package:overtime_application/style/color_class.dart';
 
 class OvertimeRegistrationButton extends StatefulWidget {
   const OvertimeRegistrationButton({Key? key}) : super(key: key);
@@ -25,10 +26,10 @@ class _OvertimeRegistrationButtonState
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(0),
-          color: const Color(0xffF9A825),
-          boxShadow: const [
+          color: ColorClass.buttoncolor,
+          boxShadow: [
             BoxShadow(
-              color: Colors.black38,
+              color: ColorClass.shadowcolor,
               offset: Offset(
                 2.0,
                 2.0,
@@ -42,12 +43,12 @@ class _OvertimeRegistrationButtonState
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Row(
-              children: const [
+              children: [
                 Padding(
                   padding: EdgeInsets.all(20.0),
                   child: Icon(
                     Icons.calendar_month,
-                    color: Color(0xff0D47A1),
+                    color: ColorClass.textcolor,
                     size: 70,
                   ),
                 ),
@@ -59,7 +60,7 @@ class _OvertimeRegistrationButtonState
                   child: Text("OVERTIME REGISTRATION",
                       style: TextStyle(
                         fontWeight: FontWeight.w900,
-                        color: Color(0xff0D47A1),
+                        color: ColorClass.textcolor,
                         fontSize: 14,
                         fontStyle: FontStyle.italic,
                       )),

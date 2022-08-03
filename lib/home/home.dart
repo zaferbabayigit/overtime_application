@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mesai_application_1/home/parts/settings_button.dart';
-import 'package:mesai_application_1/home/parts/calculate_button.dart';
-import 'package:mesai_application_1/home/parts/overtime_registration.dart';
-import 'package:mesai_application_1/home/parts/remove_ads_button.dart';
+import 'package:overtime_application/home/parts/settings_button.dart';
+import 'package:overtime_application/home/parts/calculate_button.dart';
+import 'package:overtime_application/home/parts/overtime_registration.dart';
+import 'package:overtime_application/home/parts/remove_ads_button.dart';
 
 import 'parts/overtime_registration.dart';
 
