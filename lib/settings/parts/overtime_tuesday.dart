@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:overtime_application/settings/parts/text_class.dart';
 import 'package:overtime_application/style/color_class.dart';
 
-class OvertimeCoefficient extends StatefulWidget {
-  OvertimeCoefficient({Key? key}) : super(key: key);
+class OvertimeTuesday extends StatefulWidget {
+  OvertimeTuesday({Key? key}) : super(key: key);
 
   @override
-  State<OvertimeCoefficient> createState() => _OvertimeCoefficientState();
+  State<OvertimeTuesday> createState() => _OvertimeTuesdayState();
 }
 
-class _OvertimeCoefficientState extends State<OvertimeCoefficient> {
+class _OvertimeTuesdayState extends State<OvertimeTuesday> {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -34,10 +35,11 @@ class _OvertimeCoefficientState extends State<OvertimeCoefficient> {
               ],
             ),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Padding(
-                  padding: const EdgeInsets.all(15.0),
-                  child: Text("Pazartesi :",
+                  padding: EdgeInsets.all(15.0),
+                  child: Text(SettingsText.Tuesday,
                       style: TextStyle(
                         fontWeight: FontWeight.w900,
                         color: ColorClass.textcolor,
