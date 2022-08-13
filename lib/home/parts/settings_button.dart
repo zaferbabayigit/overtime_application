@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:overtime_application/settings/settings_page.dart';
 import 'package:overtime_application/style/color_class.dart';
-import 'package:overtime_application/welcome_page/welcome.dart';
+import 'package:overtime_application/welcome/welcome_page.dart';
 
 class SettingsButton extends StatefulWidget {
   const SettingsButton({Key? key}) : super(key: key);
@@ -21,7 +21,7 @@ class _SettingsButtonState extends State<SettingsButton> {
         );
       },
       child: Container(
-        height: 130,
+        height: 100,
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(0),
@@ -48,7 +48,7 @@ class _SettingsButtonState extends State<SettingsButton> {
                   child: Icon(
                     Icons.settings,
                     color: ColorClass.textcolor,
-                    size: 70,
+                    size: 50,
                   ),
                 ),
                 SizedBox(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:overtime_application/welcome_page/welcome.dart';
+import 'package:overtime_application/welcome/welcome_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,6 +16,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const Welcome());
+        home: const WelcomePage());
   }
 }

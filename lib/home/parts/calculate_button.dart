@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:overtime_application/calculate/calculate_page.dart';
 import 'package:overtime_application/style/color_class.dart';
-import 'package:overtime_application/welcome_page/welcome.dart';
+import 'package:overtime_application/welcome/welcome_page.dart';
 
 class CalculateButton extends StatefulWidget {
   const CalculateButton({Key? key}) : super(key: key);
@@ -16,11 +17,11 @@ class _CalculateButtonState extends State<CalculateButton> {
       onPressed: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => const Welcome()),
+          MaterialPageRoute(builder: (context) => CalculatePage()),
         );
       },
       child: Container(
-        height: 130,
+        height: 100,
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(0),
@@ -47,7 +48,7 @@ class _CalculateButtonState extends State<CalculateButton> {
                   child: Icon(
                     Icons.calculate,
                     color: ColorClass.textcolor,
-                    size: 70,
+                    size: 50,
                   ),
                 ),
                 SizedBox(

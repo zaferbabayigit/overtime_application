@@ -48,7 +48,7 @@ class _OvertimeLoginState extends State<OvertimeLogin> {
               padding: EdgeInsets.all(8.0),
               child: SizedBox(
                 height: 80,
-                width: 150,
+                width: 135,
                 child: TextField(
                   keyboardType: TextInputType.number,
                   textInputAction: TextInputAction.go,
@@ -70,7 +70,7 @@ class _OvertimeLoginState extends State<OvertimeLogin> {
               padding: const EdgeInsets.all(8.0),
               child: SizedBox(
                 height: 80,
-                width: 150,
+                width: 135,
                 child: TextField(
                   keyboardType: TextInputType.number,
                   textInputAction: TextInputAction.go,

@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:overtime_application/style/color_class.dart';
-import 'package:overtime_application/welcome_page/parts/button_welcome.dart';
-import 'package:overtime_application/welcome_page/parts/image_welcome.dart';
-import 'package:overtime_application/welcome_page/parts/text_welcome.dart';
+import 'package:overtime_application/welcome/parts/button_welcome.dart';
+import 'package:overtime_application/welcome/parts/image_welcome.dart';
+import 'package:overtime_application/welcome/parts/text_welcome.dart';
 
 import 'parts/image_welcome.dart';
 
-class Welcome extends StatefulWidget {
-  const Welcome({Key? key}) : super(key: key);
+class WelcomePage extends StatefulWidget {
+  const WelcomePage({Key? key}) : super(key: key);
 
   @override
-  State<Welcome> createState() => _WelcomeState();
+  State<WelcomePage> createState() => _WelcomePageState();
 }
 
-class _WelcomeState extends State<Welcome> {
+class _WelcomePageState extends State<WelcomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

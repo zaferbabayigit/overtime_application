@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:overtime_application/saveovertime/save_overtime_page.dart';
 import 'package:overtime_application/style/color_class.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 
 class OvertimeRegistrationButton extends StatefulWidget {
   const OvertimeRegistrationButton({Key? key}) : super(key: key);
@@ -18,11 +19,11 @@ class _OvertimeRegistrationButtonState
       onPressed: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => MesaiKayitPage()),
+          MaterialPageRoute(builder: (context) => OvertimeSavePage()),
         );
       },
       child: Container(
-        height: 130,
+        height: 100,
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(0),
@@ -39,29 +40,45 @@ class _OvertimeRegistrationButtonState
             ),
           ],
         ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: Row(
           children: [
-            Row(
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Icon(
+                Icons.calendar_month,
+                color: ColorClass.textcolor,
+                size: 50,
+              ),
+            ),
+            SizedBox(
+              width: 20,
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Padding(
-                  padding: EdgeInsets.all(20.0),
-                  child: Icon(
-                    Icons.calendar_month,
-                    color: ColorClass.textcolor,
-                    size: 70,
-                  ),
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Padding(
-                  padding: EdgeInsets.all(20.0),
-                  child: Text("OVERTIME REGISTRATION",
+                  padding: EdgeInsets.all(.0),
+                  child: AutoSizeText("OVERTIME",
+                      maxLines: 1,
+                      minFontSize: 10,
+                      wrapWords: true,
                       style: TextStyle(
                         fontWeight: FontWeight.w900,
                         color: ColorClass.textcolor,
-                        fontSize: 14,
+                        fontSize: 20,
+                        fontStyle: FontStyle.italic,
+                      )),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(.0),
+                  child: AutoSizeText("REGISTRATION",
+                      maxLines: 1,
+                      minFontSize: 10,
+                      wrapWords: true,
+                      style: TextStyle(
+                        fontWeight: FontWeight.w900,
+                        color: ColorClass.textcolor,
+                        fontSize: 20,
                         fontStyle: FontStyle.italic,
                       )),
                 ),

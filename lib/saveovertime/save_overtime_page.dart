@@ -6,14 +6,14 @@ import 'package:overtime_application/saveovertime/parts/overtime_add_button.dart
 import 'package:overtime_application/saveovertime/parts/calendar.dart';
 import 'package:overtime_application/style/color_class.dart';
 
-class MesaiKayitPage extends StatefulWidget {
-  MesaiKayitPage({Key? key}) : super(key: key);
+class OvertimeSavePage extends StatefulWidget {
+  OvertimeSavePage({Key? key}) : super(key: key);
 
   @override
-  State<MesaiKayitPage> createState() => _MesaiKayitPageState();
+  State<OvertimeSavePage> createState() => _OvertimeSavePageState();
 }
 
-class _MesaiKayitPageState extends State<MesaiKayitPage> {
+class _OvertimeSavePageState extends State<OvertimeSavePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

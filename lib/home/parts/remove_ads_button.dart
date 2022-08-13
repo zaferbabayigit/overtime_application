@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:overtime_application/remove%20ads/remove_ads_page.dart';
 import 'package:overtime_application/style/color_class.dart';
-import 'package:overtime_application/welcome_page/welcome.dart';
+import 'package:overtime_application/welcome/welcome_page.dart';
 
 class RemoveAdsButton extends StatefulWidget {
   const RemoveAdsButton({Key? key}) : super(key: key);
@@ -16,7 +17,7 @@ class _RemoveAdsButtonState extends State<RemoveAdsButton> {
       onPressed: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => const Welcome()),
+          MaterialPageRoute(builder: (context) => RemoveAdsPage()),
         );
       },
       child: Container(
