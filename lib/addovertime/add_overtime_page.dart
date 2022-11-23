@@ -4,6 +4,7 @@ import 'package:overtime_application/addovertime/parts/save_button.dart';
 import 'package:overtime_application/addovertime/parts/overtime_text.dart';
 import 'package:overtime_application/addovertime/parts/overtime_login.dart';
 import 'package:overtime_application/addovertime/parts/selected_date.dart';
+import 'package:overtime_application/saveovertime/parts/calendar.dart';
 import 'package:overtime_application/style/color_class.dart';
 
 class AddOvertimePage extends StatefulWidget {
@@ -47,7 +48,9 @@ class _AddOvertimePageState extends State<AddOvertimePage> {
             const SizedBox(
               height: 40,
             ),
-            const SelectedDate(),
+            SelectedDate(
+              selectedDay: selectedDay,
+            ),
             const SizedBox(
               height: 40,
             ),

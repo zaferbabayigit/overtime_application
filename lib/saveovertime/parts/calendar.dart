@@ -57,3 +57,5 @@ class _CalendarState extends State<Calendar> {
     );
   }
 }
+
+DateTime selectedDay = DateTime.now();

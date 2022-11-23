@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:overtime_application/style/color_class.dart';
+import 'package:table_calendar/table_calendar.dart';
 
 class SelectedDate extends StatelessWidget {
-  const SelectedDate({Key? key}) : super(key: key);
+  SelectedDate({Key? key, required this.selectedDay}) : super(key: key);
+
+  final DateTime selectedDay;
 
   @override
   Widget build(BuildContext context) {
@@ -12,10 +15,10 @@ class SelectedDate extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(0),
         color: ColorClass.buttoncolor,
-        boxShadow: const [
+        boxShadow: [
           BoxShadow(
-            color: Colors.black38,
-            offset: Offset(
+            color: ColorClass.shadowcolor,
+            offset: const Offset(
               2.0,
               2.0,
             ),
@@ -26,7 +29,7 @@ class SelectedDate extends StatelessWidget {
       ),
       child: Padding(
         padding: EdgeInsets.all(10.0),
-        child: Text("31.07.2022",
+        child: Text("$selectedDay",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontWeight: FontWeight.w900,

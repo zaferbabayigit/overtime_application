@@ -50,6 +50,7 @@ class _OvertimeLoginState extends State<OvertimeLogin> {
                 height: 80,
                 width: 135,
                 child: TextField(
+                  controller: hourscontroller,
                   keyboardType: TextInputType.number,
                   textInputAction: TextInputAction.go,
                   cursorColor: ColorClass.buttoncolor,
@@ -72,6 +73,7 @@ class _OvertimeLoginState extends State<OvertimeLogin> {
                 height: 80,
                 width: 135,
                 child: TextField(
+                  controller: minutecontroller,
                   keyboardType: TextInputType.number,
                   textInputAction: TextInputAction.go,
                   cursorColor: ColorClass.buttoncolor,
@@ -105,3 +107,6 @@ class _OvertimeLoginState extends State<OvertimeLogin> {
     );
   }
 }
+
+final TextEditingController hourscontroller = TextEditingController();
+final TextEditingController minutecontroller = TextEditingController();
